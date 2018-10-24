@@ -11,5 +11,5 @@
       instance_tags:
            Name: AnsibleLab
            Owner: Sean
-      count: 2
+      count: 1
       # vpc_subnet_id:
