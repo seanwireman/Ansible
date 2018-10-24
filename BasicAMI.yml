@@ -9,5 +9,6 @@
       name: NewAMIProvision
       tags:
         name: MyNewAMI
+        Service: TestService
     register: instance
   
