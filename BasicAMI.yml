@@ -1,0 +1,13 @@
+--- # EC2_AMI Module Basic Provision
+- hosts: localhost
+
+  tasks:
+  - name:  Basic AMI Provisioning
+    ec2_ami:
+      instance_id: i-0e584a873529b9cb9
+      wait: yes
+      name: NewAMIProvision
+      tags:
+        name: MyNewAMI
+    register: instance
+  
