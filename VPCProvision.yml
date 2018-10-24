@@ -1,0 +1,10 @@
+--- # EC2_VPC Module Basic Provision
+- hosts: localhost
+
+  tasks:
+  - name: Create VPC using 10.10.x.x range
+    ec2_vpc_net:
+      name: VPC-Ansible
+      cidr_block: 10.10.0.0/16
+      region: us-east-1
+    register: vpcblock
